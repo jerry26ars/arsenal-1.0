@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"buttonpromax\startup_stm32f103xb.o"
+"buttonpromax\main.o"
+"buttonpromax\stm32f1xx_it.o"
+"buttonpromax\stm32f1xx_hal_msp.o"
+"buttonpromax\stm32f1xx_hal_gpio_ex.o"
+"buttonpromax\stm32f1xx_hal_tim.o"
+"buttonpromax\stm32f1xx_hal_tim_ex.o"
+"buttonpromax\stm32f1xx_hal.o"
+"buttonpromax\stm32f1xx_hal_rcc.o"
+"buttonpromax\stm32f1xx_hal_rcc_ex.o"
+"buttonpromax\stm32f1xx_hal_gpio.o"
+"buttonpromax\stm32f1xx_hal_dma.o"
+"buttonpromax\stm32f1xx_hal_cortex.o"
+"buttonpromax\stm32f1xx_hal_pwr.o"
+"buttonpromax\stm32f1xx_hal_flash.o"
+"buttonpromax\stm32f1xx_hal_flash_ex.o"
+"buttonpromax\stm32f1xx_hal_exti.o"
+"buttonpromax\system_stm32f1xx.o"
+--strict --scatter "BUTTONPROMAX\BUTTONPROMAX.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BUTTONPROMAX.map" -o BUTTONPROMAX\BUTTONPROMAX.axf
